@@ -16,6 +16,15 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import url(http://fonts.googleapis.com/css?family=Antic+Slab);
+
+
+body {
+  color:#fff;
+  background-color: black;
+  background-image: ("/assets/images/abstract_art_8-wallpaper-1280x800.jpg");
+  background-attachment:fixed;
+}
 
 footer {
 	font-size: 1em;
@@ -23,10 +32,6 @@ footer {
   clear: both;
   padding-top: 50px;
   color: #ccc;
-}
-
-body {
-	background-color: #0101DF;
 }
 
 h3 {
@@ -53,7 +58,7 @@ h5 {
 
 a {
 	padding: 0 32.5px;
-	color: #ccc;
+	color: red;
 }
 
 img {
@@ -63,7 +68,41 @@ img {
   max-height: 275px;
   margin: 0 auto 30px;
   border-radius: 100%;
-  float: left;
+  float: center;
   padding-left: 5px;
 }
 
+html,body {
+  height:100%;
+}
+
+h1 {
+  font-family: 'Antic Slab', serif;
+  font-size:80px;
+  color:#013ADF;
+}
+
+.lead {
+  color:#DDCCEE;
+}
+
+
+/* Custom container */
+.container-full {
+  margin: 0 auto;
+  width: 100%;
+  min-height:100%;
+  overflow:hidden;
+}
+
+.container-full a {
+  text-decoration:none;
+}
+
+.v-center {
+  margin-top:7%;
+}
+
+.panel-body {
+  color: black;
+}
