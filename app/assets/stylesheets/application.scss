@@ -20,7 +20,7 @@
 
 
 body {
-  color: #fff;
+  
   background-image: image-url('abstract_art_8-wallpaper-1280x800.jpg');
   background-attachment:fixed;
   background-repeat: no-repeat;
@@ -40,28 +40,32 @@ footer {
 h3 {
   font-size: 1.75em;
   padding: 0 15px;
+  color: white;
 }
 
 p {
 	padding: 0 32.5px;
 	font-size: 1.15em;
+  color: white;
 }
 
 li {
 	padding: 0 32.5px;
+  color: white;
 }
 
 ul {
 	padding: 0 15px;
+  color: white;
 }
 
 h5 {
 	padding: 0 32.5px;
+  color: white;
 }
 
 a {
 	padding: 0 32.5px;
-	color: red;
 }
 
 .profile-photo {
