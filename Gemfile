@@ -7,12 +7,13 @@ gem 'rails', '4.1.5'
 gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
+# font-awesome-rails provides the Font-Awesome web fonts and stylesheets as a Rails engine for use with the asset pipeline.
+gem 'font-awesome-rails'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
-# See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer',  platforms: :ruby
+
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -29,25 +30,20 @@ gem 'spring',        group: :development
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
-
-# Use debugger
-# gem 'debugger', group: [:development, :test]
-
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'
-gem 'devise'
+gem 'monologue', github: 'alexand3rsc0tt/monologue'
+gem "monologue_image_upload", :git => "git@github.com:alexand3rsc0tt/monologue_image_upload.git"
+
 
 
 group :development, :test do
-  gem 'spring-commands-rspec'
-  gem 'rspec-rails'
-  gem 'guard-rspec'
-  gem 'rb-fsevent' if `uname` =~ /Darwin/
+  # Better Errors replaces the standard Rails error page with a much better and more useful error page.
+  gem 'better_errors'
+  # RailsPanel is a Chrome extension for Rails development. Have all information about your Rails app requests in the browser - in the Developer Tools panel.
+  gem 'rails_panel'
+  # Supporting gem for Rails Panel (Google Chrome extension for Rails development).
+  gem 'binding_of_caller'
+
+
 end
-
-

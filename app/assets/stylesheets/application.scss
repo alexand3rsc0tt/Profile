@@ -16,16 +16,43 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@import url(http://fonts.googleapis.com/css?family=Antic+Slab);
+@import "font-awesome";
+@import url(http://fonts.googleapis.com/css?family=Playball);
 
+/*Navbar*/
+.navbar {
+  background-color: #2b2b2b;
+  border-color: #2b2b2b;
+}
+
+.navbar-default .navbar-brand {
+  font-size: 2.5em;
+  padding: 15px 5px;
+  font-family: 'Playball', cursive;
+  color: whitesmoke;
+}
+
+.navbar-default .navbar-nav > li > a {
+  font-size: 1.75em;
+  font-family: 'Playball', cursive;
+  color: whitesmoke;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #fff;
+  background-color: #aeacac;
+}
+//
 
 body {
-  
+
   background-image: image-url('abstract_art_8-wallpaper-1280x800.jpg');
   background-attachment:fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position:center;
+  padding-top: 70px;
 
 }
 
@@ -35,37 +62,7 @@ footer {
   clear: both;
   padding-top: 50px;
   color: #ccc;
-}
-
-h3 {
-  font-size: 1.75em;
-  padding: 0 15px;
-  color: white;
-}
-
-p {
-	padding: 0 32.5px;
-	font-size: 1.15em;
-  color: white;
-}
-
-li {
-	padding: 0 32.5px;
-  color: white;
-}
-
-ul {
-	padding: 0 15px;
-  color: white;
-}
-
-h5 {
-	padding: 0 32.5px;
-  color: white;
-}
-
-a {
-	padding: 0 32.5px;
+  font-family: 'Playball', cursive;
 }
 
 .profile-photo {
@@ -79,21 +76,6 @@ a {
   padding-left: 5px;
   size: 350px 350px;
 }
-
-html,body {
-  height:100%;
-}
-
-h1 {
-  font-family: 'Antic Slab', serif;
-  font-size:80px;
-  color:#013ADF;
-}
-
-.lead {
-  color:#DDCCEE;
-}
-
 
 /* Custom container */
 .container-full {
